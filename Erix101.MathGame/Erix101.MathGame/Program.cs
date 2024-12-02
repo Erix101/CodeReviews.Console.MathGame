@@ -19,7 +19,7 @@ do
     try
     {
         Console.WriteLine($"Hi {Char.ToUpper(name[0])}{name.Substring(1).ToLower()}, pleased to meet you.  It's  {date.Hour}:{date.Minute} You have 10 questions. Lets start!");
-
+        valid = true;
     }
     catch (IndexOutOfRangeException e)
     {
