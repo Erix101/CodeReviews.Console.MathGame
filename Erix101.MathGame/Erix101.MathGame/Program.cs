@@ -1,6 +1,5 @@
-﻿using System.Diagnostics.CodeAnalysis;
-using System.Numerics;
-using System.Runtime.InteropServices;
+﻿
+
 using System.Text.Json.Serialization;
 
 Console.OutputEncoding = System.Text.Encoding.UTF8;
@@ -54,6 +53,7 @@ Q - Quit the game
             Console.WriteLine(pastQuestions);
             Console.WriteLine();
             Console.WriteLine("Thank you for playing!");
+            Console.ReadKey();
             Environment.Exit(0);
         }
         else if (option == "P")
@@ -73,11 +73,9 @@ Q - Quit the game
 
     }
 
-} while (true);   // to limit the number of questions to  10 change to:  while (true & questionNumber < 11); 
+} while (true);  
 
-// Add the next two lines if limiting the number of questions
-//Console.WriteLine();
-//Console.WriteLine($"Thank you for playing {Char.ToUpper(name[0])}{name.Substring(1).ToLower()}!  You scored {score}/10 !");
+
 
 
 
