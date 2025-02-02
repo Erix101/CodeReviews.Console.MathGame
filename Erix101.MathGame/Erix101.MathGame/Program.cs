@@ -53,7 +53,7 @@ Q - Quit the game
             Console.WriteLine(pastQuestions);
             Console.WriteLine();
             Console.WriteLine("Thank you for playing!");
-            Console.ReadKey();
+            //Console.ReadKey();
             Environment.Exit(0);
         }
         else if (option == "P")
